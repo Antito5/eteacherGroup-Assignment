@@ -3,7 +3,7 @@ import Login from "../pages/Login";
 
 describe('Login Test Cases',()=>{
 
-    describe('Login valid email/password test cases',()=>{
+    describe('Login valid email/password test cases ',()=>{
 
     it('Validate Login with correct and complete credentials',()=>{
 
