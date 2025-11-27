@@ -9,7 +9,7 @@ describe('NEXT button Test cases',()=>{
         const registration=new Registration();
         const login=new Login();
         const taskPlanner= new TaskPlanner();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();

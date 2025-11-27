@@ -15,7 +15,7 @@ describe('Login Test Cases',()=>{
         */
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -29,7 +29,7 @@ describe('Login Test Cases',()=>{
     it('Validate Show/Hide check is working correctly',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -47,7 +47,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with email that start without one or more alphabetic character',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -59,7 +59,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with email that has incorrect domain',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -71,7 +71,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with email without a dot before than TLD',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -82,7 +82,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with email that has a numeric TLD',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -94,7 +94,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with email that has TLD with less 2 characters',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -110,7 +110,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with a password with less than 8 characters',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -123,7 +123,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with a password without any uppercase letter',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -136,7 +136,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with a password without any lowercase letter',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -149,7 +149,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with a password without any number',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -162,7 +162,7 @@ describe('Login Test Cases',()=>{
     it('Validate Login with a password without any special character',()=>{
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
@@ -185,7 +185,7 @@ describe('Login Test Cases',()=>{
         */
         const registration=new Registration();
         const login=new Login();
-        cy.visit("http://127.0.0.1:5500/QA_Task%201_updated_v4.html");
+        cy.visit("/QA_Task%201_updated_v4.html");
         registration.getRegistrationFullName().type('Antonella Morano');
         registration.getRegistrationEmail().type('antito_morano@gmail.com');
         registration.getStartButton().click();
