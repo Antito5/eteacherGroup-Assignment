@@ -24,6 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install http-server
+        run: npm install -g http-server
+
+      - name: Start local server
+        run: npx http-server ./ -p 5500 & sleep 3
+
       - name: Run Cypress tests
         run: npx cypress run
 
