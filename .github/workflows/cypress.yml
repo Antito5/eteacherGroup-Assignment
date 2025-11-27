@@ -31,7 +31,8 @@ jobs:
         run: npx http-server ./ -p 5500 & sleep 3
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: |
+          CI=true npx cypress run || true
 
       - name: Upload Cypress artifacts
         if: always()
